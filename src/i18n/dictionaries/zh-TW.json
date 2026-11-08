@@ -1,0 +1,45 @@
+{
+  "tagline": "一步一步看安全如何運作。",
+  "nav": { "domains": "領域", "lessons": "課程", "about": "關於", "theme": "淺色或深色", "language": "語言", "skipToPlayer": "跳到播放器" },
+  "home": {
+    "lead": "每個主題都是一條可以播放、暫停、拖曳與檢視的時間軸。一側是攻擊者的動作，中間是線路上傳輸的內容，另一側是 SOC 會看到的紀錄。",
+    "startFlagship": "從 TLS 交握開始", "browse": "瀏覽各領域",
+    "promiseTitle": "三個視角，一條時間軸",
+    "actorTitle": "行動者視角", "actorBody": "攻擊者或使用者做了什麼，一步一步，並說明每一步的理由。",
+    "wireTitle": "線路視角", "wireBody": "網路上傳輸的內容，逐欄位、逐位元組解碼，每個欄位都有一句平實的說明。",
+    "defenderTitle": "防守方視角", "defenderBody": "同一步產生的紀錄、告警與遙測，取自 SOC 實際會讀的來源。",
+    "domainsTitle": "十二個領域",
+    "domainsLead": "一個主題只收錄一次，需要的地方引用它。每個領域以地圖方式開啟，於是你看到的是一條路徑，而不是一張清單。",
+    "safetyTitle": "全部為模擬資料",
+    "safetyBody": "所有情境都使用合成資料。沒有任何課程提供可用的攻擊程式碼或可照做的攻擊步驟，每一節攻擊課程都以對應的偵測課程收尾。",
+    "readAbout": "了解它是怎麼做的"
+  },
+  "player": {
+    "play": "播放", "pause": "暫停", "replay": "重播", "reset": "重設",
+    "playPause": "播放或暫停（空白鍵）", "nextStep": "下一步（右方向鍵）", "prevStep": "上一步（左方向鍵）",
+    "speed": "播放速度", "scrubber": "時間軸。用方向鍵逐步移動。", "stepOf": "第 {n} 步，共 {total} 步",
+    "stepDetails": "步驟細節", "bytes": "位元組", "decode": "解碼",
+    "noArtifact": "這一步沒有任何內容經過線路，沒有可解碼的東西。",
+    "noTelemetry": "這一步不會在任何紀錄裡留下痕跡。這正是它的重點。",
+    "telemetry": "遙測", "legend": "圖例", "facts": "要點",
+    "perspective": "視角", "actor": "行動者", "defender": "防守方", "both": "兩者",
+    "whatIf": "如果", "whatIfBack": "回到主路徑", "onBranch": "你正處在一條「如果」分支上。",
+    "stepThrough": "逐步模式：動畫已關閉，請使用步驟按鈕。",
+    "fieldHint": "把指標移到欄位上或選取它，即可看到含義。",
+    "offsetFmt": "位移 {offset}，{length} 位元組", "suspicious": "已標記",
+    "overview": "概覽", "startLesson": "開始", "finished": "已完成", "intro": "引言", "outro": "小結"
+  },
+  "challenge": { "title": "練習", "check": "檢查", "tryAgain": "再試一次", "correct": "正確。", "incorrect": "不是這個。", "reveal": "顯示答案", "pickOne": "先選一項，然後檢查。" },
+  "lesson": {
+    "level": "層級", "minutes": "{n} 分鐘", "prerequisites": "前置課程", "related": "相關", "alsoIn": "也見於",
+    "attack": "ATT&CK", "detectionCounterpart": "對應的偵測課程",
+    "foundations": "基礎", "intermediate": "中級", "advanced": "進階",
+    "planned": "計畫中", "plannedNote": "尚未撰寫。引擎已就緒，內容還沒有。",
+    "lessonCount": "{n} 節課", "writtenCount": "已寫 {written}，共 {total}", "openMap": "開啟地圖",
+    "noneYet": "這個領域還沒有寫好的課程。"
+  },
+  "severity": { "info": "資訊", "notice": "提示", "warning": "警告", "alert": "告警" },
+  "intent": { "inert": "惰性", "attacker": "攻擊者", "defender": "防守方", "anomalous": "異常", "signal": "訊號" },
+  "footer": { "simulated": "本平台的全部資料均為模擬。", "source": "原始碼" },
+  "error": { "notFound": "沒有這個頁面", "notFoundBody": "該課程或領域不存在。領域列表裡是所有確實存在的內容。", "backHome": "回到起點" }
+}

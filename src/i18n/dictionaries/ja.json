@@ -1,0 +1,62 @@
+{
+  "tagline": "セキュリティの動きを、一歩ずつ見る。",
+  "nav": { "domains": "分野", "lessons": "レッスン", "about": "このサイトについて", "theme": "ライトかダーク", "language": "言語", "skipToPlayer": "プレーヤーへ移動" },
+  "home": {
+    "lead": "どの題材も、再生・一時停止・移動・調査ができるタイムラインです。片側に攻撃者の動き、中央に回線を流れるもの、もう片側にSOCが見るログが並びます。",
+    "startFlagship": "TLSハンドシェイクから始める",
+    "browse": "分野を見る",
+    "promiseTitle": "3つの視点、1本のタイムライン",
+    "actorTitle": "行為者の視点",
+    "actorBody": "攻撃者または利用者が何をするか、各動作の理由とともに一歩ずつ。",
+    "wireTitle": "回線の視点",
+    "wireBody": "ネットワークを流れるものを、フィールド単位・バイト単位で解読し、各フィールドに平易な注記を付けます。",
+    "defenderTitle": "防御側の視点",
+    "defenderBody": "同じ一歩が生むログ・アラート・テレメトリを、SOCが実際に読む情報源から示します。",
+    "domainsTitle": "12の分野",
+    "domainsLead": "正典となる題材は一度だけ存在し、必要な場所から参照されます。各分野は地図として開くので、一覧ではなく道筋が見えます。",
+    "safetyTitle": "すべて模擬データ",
+    "safetyBody": "すべてのシナリオは合成データを使います。動作する攻撃コードや実運用の攻撃手順を含むレッスンはなく、攻撃のレッスンは必ず対応する検知のレッスンで終わります。",
+    "readAbout": "作りを読む"
+  },
+  "player": {
+    "play": "再生", "pause": "一時停止", "replay": "もう一度", "reset": "リセット",
+    "playPause": "再生または一時停止（スペース）", "nextStep": "次の段階（右矢印）", "prevStep": "前の段階（左矢印）",
+    "speed": "再生速度", "scrubber": "タイムライン。矢印キーで段階を移動します。", "stepOf": "{total} 段階のうち {n}",
+    "stepDetails": "段階の詳細", "bytes": "バイト", "decode": "解読",
+    "noArtifact": "この段階では回線に何も流れません。解読するものはありません。",
+    "noTelemetry": "この段階はどのログにも痕跡を残しません。それが狙いです。",
+    "telemetry": "テレメトリ", "legend": "凡例", "facts": "要点",
+    "perspective": "視点", "actor": "行為者", "defender": "防御側", "both": "両方",
+    "whatIf": "もし", "whatIfBack": "本来の流れに戻る", "onBranch": "「もし」の分岐にいます。",
+    "stepThrough": "段階送りモード：動きは止めてあります。段階の操作を使ってください。",
+    "fieldHint": "フィールドにカーソルを合わせるか選択すると、意味が出ます。",
+    "offsetFmt": "位置 {offset}、{length} バイト", "suspicious": "印あり",
+    "overview": "概要", "startLesson": "開始", "finished": "完了", "intro": "導入", "outro": "まとめ"
+  },
+  "challenge": { "title": "演習", "check": "確認", "tryAgain": "もう一度", "correct": "正解です。", "incorrect": "それではありません。", "reveal": "答えを見る", "pickOne": "1つ選んで確認してください。" },
+  "lesson": {
+    "level": "水準", "minutes": "{n} 分", "prerequisites": "前提", "related": "関連", "alsoIn": "ほかの分野",
+    "attack": "ATT&CK", "detectionCounterpart": "対応する検知のレッスン",
+    "foundations": "基礎", "intermediate": "中級", "advanced": "上級",
+    "planned": "予定", "plannedNote": "まだ書かれていません。engine は用意済みで、内容が未了です。",
+    "lessonCount": "{n} レッスン", "writtenCount": "{total} のうち {written} 作成済み", "openMap": "地図を開く",
+    "noneYet": "この分野のレッスンはまだありません。"
+  },
+  "severity": { "info": "情報", "notice": "通知", "warning": "警告", "alert": "重大" },
+  "intent": { "inert": "無害", "attacker": "攻撃者", "defender": "防御側", "anomalous": "異常", "signal": "信号" },
+  "about": {
+    "title": "SecViz について",
+    "intent": "何のためのものか",
+    "intentBody": "SecViz は、起きていることを動かして見せることでセキュリティを教えます。ハンドシェイクや攻撃経路を説明するのではなく、再生します。任意の時点で止めて、対象をフィールド単位で分解し、同じ瞬間を防御側から見ることができます。",
+    "safety": "歯止め",
+    "safetyBody": "すべてのシナリオは合成データを使います。このプラットフォームに実在の標的、実在の資格情報、動作する攻撃ペイロードは一切ありません。攻撃のレッスンは検知と防御の理解のために存在します。各レッスンは対応する検知のレッスンを明示し、攻撃は回線とログでどう見えるかという水準で示します。手順書としては示しません。",
+    "how": "作り",
+    "howBody": "シナリオプレーヤーという単一の部品が、すべてのレッスンを動かします。レッスンはスキーマで検証されるデータなので、engine のコードに触れずに追加できます。各パネルは単一のタイムラインに同期し続けます。",
+    "access": "アクセシビリティ",
+    "accessBody": "プレーヤーはキーボードだけで操作できます。スペースで再生と一時停止、矢印キーで段階送りです。色が唯一の手がかりになることはなく、どの意味にも記号か文字が付き、両テーマが WCAG AA のコントラストを満たします。動きを減らす設定のときは、連続した動きのない段階送りモードに切り替わります。",
+    "credit": "謝辞",
+    "creditBody": "ここでの操作の考え方は、Dilum Sanjaya 氏の Protocol Explorer に倣っています。同サイトはパケットを動かし、一つずつバイト単位で解読してネットワークを教えます。SecViz はその教え方をセキュリティ全体に広げ、防御側の視点を加えたものです。"
+  },
+  "footer": { "simulated": "このプラットフォームのデータはすべて模擬です。", "source": "ソース" },
+  "error": { "notFound": "そのページはありません", "notFoundBody": "そのレッスンまたは分野は存在しません。存在するものは分野の一覧にあります。", "backHome": "最初に戻る" }
+}

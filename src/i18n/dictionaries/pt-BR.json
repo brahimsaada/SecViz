@@ -1,0 +1,45 @@
+{
+  "tagline": "Veja a segurança funcionar, passo a passo.",
+  "nav": { "domains": "Domínios", "lessons": "Lições", "about": "Sobre", "theme": "Claro ou escuro", "language": "Idioma", "skipToPlayer": "Ir para o player" },
+  "home": {
+    "lead": "Cada tema é uma linha do tempo que você pode reproduzir, pausar, percorrer e inspecionar. A ação do atacante de um lado, o que passa na rede no meio, e os registros que um SOC veria do outro.",
+    "startFlagship": "Comece pelo handshake TLS", "browse": "Ver os domínios",
+    "promiseTitle": "Três vistas, uma linha do tempo",
+    "actorTitle": "Vista do ator", "actorBody": "O que o atacante ou o usuário faz, passo a passo, com o motivo de cada movimento.",
+    "wireTitle": "Vista da rede", "wireBody": "O que atravessa a rede, decodificado campo por campo e byte por byte, com uma nota em linguagem simples em cada campo.",
+    "defenderTitle": "Vista do defensor", "defenderBody": "Os registros, alertas e a telemetria que o mesmo passo produz, a partir das fontes que um SOC realmente lê.",
+    "domainsTitle": "Doze domínios",
+    "domainsLead": "Um tema canônico existe uma única vez e é referenciado onde for necessário. Cada domínio abre como um mapa, então você vê um caminho e não uma lista.",
+    "safetyTitle": "Tudo simulado",
+    "safetyBody": "Todo cenário usa dados sintéticos. Nenhuma lição traz código de exploração funcional nem instruções operacionais de ataque, e cada lição de ataque termina na sua contraparte de detecção.",
+    "readAbout": "Leia como foi construído"
+  },
+  "player": {
+    "play": "INICIAR", "pause": "PAUSAR", "replay": "REPETIR", "reset": "REINICIAR",
+    "playPause": "Iniciar ou pausar (Espaço)", "nextStep": "Passo seguinte (seta direita)", "prevStep": "Passo anterior (seta esquerda)",
+    "speed": "Velocidade", "scrubber": "Linha do tempo. Use as setas para avançar.", "stepOf": "Passo {n} de {total}",
+    "stepDetails": "DETALHE DO PASSO", "bytes": "BYTES", "decode": "DECODIFICAÇÃO",
+    "noArtifact": "Este passo não move nada pela rede. Não há o que decodificar.",
+    "noTelemetry": "Este passo não deixa rastro em nenhum registro. É justamente o ponto.",
+    "telemetry": "TELEMETRIA", "legend": "LEGENDA", "facts": "DADOS",
+    "perspective": "Perspectiva", "actor": "Ator", "defender": "Defensor", "both": "Ambas",
+    "whatIf": "E SE", "whatIfBack": "Voltar ao caminho principal", "onBranch": "Você está em um caminho alternativo.",
+    "stepThrough": "Modo passo a passo: o movimento está desligado, use os controles de passo.",
+    "fieldHint": "Passe o cursor ou selecione um campo para ver o que significa.",
+    "offsetFmt": "deslocamento {offset}, {length} bytes", "suspicious": "marcado",
+    "overview": "VISÃO GERAL", "startLesson": "COMEÇAR", "finished": "CONCLUÍDA", "intro": "INTRO", "outro": "FECHAMENTO"
+  },
+  "challenge": { "title": "EXERCÍCIO", "check": "VERIFICAR", "tryAgain": "DE NOVO", "correct": "Correto.", "incorrect": "Não é essa.", "reveal": "Ver a resposta", "pickOne": "Escolha uma e verifique." },
+  "lesson": {
+    "level": "Nível", "minutes": "{n} min", "prerequisites": "Pré-requisitos", "related": "Relacionado", "alsoIn": "Também em",
+    "attack": "ATT&CK", "detectionCounterpart": "Contraparte de detecção",
+    "foundations": "Fundamentos", "intermediate": "Intermediário", "advanced": "Avançado",
+    "planned": "Prevista", "plannedNote": "Ainda não escrita. O motor está pronto; o conteúdo não.",
+    "lessonCount": "{n} lições", "writtenCount": "{written} de {total} escritas", "openMap": "Abrir o mapa",
+    "noneYet": "Nenhuma lição deste domínio foi escrita ainda."
+  },
+  "severity": { "info": "info", "notice": "aviso", "warning": "alerta", "alert": "crítico" },
+  "intent": { "inert": "Inerte", "attacker": "Atacante", "defender": "Defensor", "anomalous": "Anômalo", "signal": "Sinal" },
+  "footer": { "simulated": "Todos os dados desta plataforma são simulados.", "source": "Código" },
+  "error": { "notFound": "Página inexistente", "notFoundBody": "Essa lição ou domínio não existe. A lista de domínios tem tudo o que existe.", "backHome": "Voltar ao início" }
+}

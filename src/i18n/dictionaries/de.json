@@ -1,0 +1,62 @@
+{
+  "tagline": "Sicherheit bei der Arbeit beobachten, Schritt für Schritt.",
+  "nav": { "domains": "Bereiche", "lessons": "Lektionen", "about": "Über", "theme": "Hell oder dunkel", "language": "Sprache", "skipToPlayer": "Zum Player springen" },
+  "home": {
+    "lead": "Jedes Thema ist eine Zeitleiste, die sich abspielen, anhalten, durchfahren und untersuchen lässt. Die Handlung des Angreifers auf der einen Seite, die Leitung in der Mitte, die Logs eines SOC auf der anderen.",
+    "startFlagship": "Mit dem TLS-Handshake beginnen",
+    "browse": "Bereiche durchsehen",
+    "promiseTitle": "Drei Ansichten, eine Zeitleiste",
+    "actorTitle": "Akteursansicht",
+    "actorBody": "Was der Angreifer oder der Benutzer tut, Schritt für Schritt, mit dem Grund für jeden Zug.",
+    "wireTitle": "Leitungsansicht",
+    "wireBody": "Was durch das Netz geht, Feld für Feld und Byte für Byte dekodiert, mit einer verständlichen Anmerkung an jedem Feld.",
+    "defenderTitle": "Verteidigeransicht",
+    "defenderBody": "Die Logs, Alarme und Telemetrie, die derselbe Schritt erzeugt, aus den Quellen, die ein SOC wirklich liest.",
+    "domainsTitle": "Zwölf Bereiche",
+    "domainsLead": "Ein kanonisches Thema existiert einmal und wird überall dort referenziert, wo es gebraucht wird. Jeder Bereich öffnet sich als Karte, man sieht also einen Weg und keine Liste.",
+    "safetyTitle": "Durchweg simuliert",
+    "safetyBody": "Jedes Szenario verwendet synthetische Daten. Keine Lektion enthält funktionsfähigen Exploit-Code oder einsatzfähige Angriffsanleitungen, und jede Angriffslektion endet in ihrem Erkennungsgegenstück.",
+    "readAbout": "Lesen, wie das gebaut ist"
+  },
+  "player": {
+    "play": "START", "pause": "PAUSE", "replay": "ERNEUT", "reset": "ZURÜCK",
+    "playPause": "Abspielen oder anhalten (Leertaste)", "nextStep": "Nächster Schritt (Pfeil rechts)", "prevStep": "Vorheriger Schritt (Pfeil links)",
+    "speed": "Abspielgeschwindigkeit", "scrubber": "Zeitleiste. Mit den Pfeiltasten schrittweise bewegen.", "stepOf": "Schritt {n} von {total}",
+    "stepDetails": "SCHRITTDETAIL", "bytes": "BYTES", "decode": "DEKODIERUNG",
+    "noArtifact": "Dieser Schritt bewegt nichts über die Leitung. Es gibt nichts zu dekodieren.",
+    "noTelemetry": "Dieser Schritt hinterlässt in keinem Log eine Spur. Genau darum geht es.",
+    "telemetry": "TELEMETRIE", "legend": "LEGENDE", "facts": "FAKTEN",
+    "perspective": "Perspektive", "actor": "Akteur", "defender": "Verteidiger", "both": "Beide",
+    "whatIf": "WAS WÄRE WENN", "whatIfBack": "Zurück zum Hauptweg", "onBranch": "Sie befinden sich auf einem Was-wäre-wenn-Weg.",
+    "stepThrough": "Schrittmodus: Bewegung ist aus, benutzen Sie die Schrittsteuerung.",
+    "fieldHint": "Ein Feld anfahren oder fokussieren, um seine Bedeutung zu sehen.",
+    "offsetFmt": "Offset {offset}, {length} Bytes", "suspicious": "markiert",
+    "overview": "ÜBERBLICK", "startLesson": "START", "finished": "FERTIG", "intro": "INTRO", "outro": "ABSCHLUSS"
+  },
+  "challenge": { "title": "AUFGABE", "check": "PRÜFEN", "tryAgain": "NOCHMAL", "correct": "Richtig.", "incorrect": "Nicht diese.", "reveal": "Antwort zeigen", "pickOne": "Eine auswählen, dann prüfen." },
+  "lesson": {
+    "level": "Stufe", "minutes": "{n} Min", "prerequisites": "Voraussetzungen", "related": "Verwandt", "alsoIn": "Auch in",
+    "attack": "ATT&CK", "detectionCounterpart": "Erkennungsgegenstück",
+    "foundations": "Grundlagen", "intermediate": "Mittel", "advanced": "Fortgeschritten",
+    "planned": "Geplant", "plannedNote": "Noch nicht geschrieben. Die Engine ist bereit, der Inhalt nicht.",
+    "lessonCount": "{n} Lektionen", "writtenCount": "{written} von {total} geschrieben", "openMap": "Karte öffnen",
+    "noneYet": "In diesem Bereich ist noch keine Lektion geschrieben."
+  },
+  "severity": { "info": "Info", "notice": "Hinweis", "warning": "Warnung", "alert": "Alarm" },
+  "intent": { "inert": "Inert", "attacker": "Angreifer", "defender": "Verteidiger", "anomalous": "Auffällig", "signal": "Signal" },
+  "about": {
+    "title": "Über SecViz",
+    "intent": "Wozu das dient",
+    "intentBody": "SecViz lehrt Sicherheit, indem es ihren Ablauf animiert. Statt einen Handshake oder einen Angriffspfad zu beschreiben, spielt es ihn ab: Sie halten an jedem Punkt an, nehmen das Artefakt Feld für Feld auseinander und betrachten denselben Moment dann von der Seite des Verteidigers.",
+    "safety": "Grenzen",
+    "safetyBody": "Alle Szenarien verwenden synthetische Daten. Es gibt auf dieser Plattform keine echten Ziele, keine echten Zugangsdaten und keine funktionsfähigen Exploit-Payloads. Angriffslektionen gibt es, um Erkennung und Verteidigung zu verstehen: jede nennt die Erkennungslektion, die sie beantwortet, und der Angriff wird auf der Ebene gezeigt, wie er auf der Leitung und in den Logs aussieht, nicht als Anleitung zum Nachmachen.",
+    "how": "Wie das gebaut ist",
+    "howBody": "Eine einzige Komponente, der Szenario-Player, treibt jede Lektion an. Eine Lektion sind Daten, die gegen ein Schema geprüft werden, also fügt ein Beitragender eine hinzu, ohne Engine-Code anzufassen. Die Panels bleiben auf eine einzige Zeitleiste synchronisiert.",
+    "access": "Barrierefreiheit",
+    "accessBody": "Der Player lässt sich vollständig über die Tastatur bedienen: Leertaste spielt und hält an, die Pfeiltasten gehen schrittweise. Farbe ist nie das einzige Signal, jede Bedeutung trägt zusätzlich einen Marker oder eine Beschriftung, und beide Themes erfüllen den WCAG-AA-Kontrast. Wenn das System weniger Bewegung verlangt, wechselt der Player in den Schrittmodus ohne durchlaufende Animation.",
+    "credit": "Nachweis",
+    "creditBody": "Das Interaktionsmodell ist Protocol Explorer von Dilum Sanjaya nachempfunden, der Netzwerktechnik lehrt, indem er Pakete animiert und jedes Byte für Byte dekodiert. SecViz überträgt diese Didaktik auf die ganze Sicherheit und ergänzt die Verteidigeransicht."
+  },
+  "footer": { "simulated": "Alle Daten auf dieser Plattform sind simuliert.", "source": "Quellcode" },
+  "error": { "notFound": "Keine solche Seite", "notFoundBody": "Diese Lektion oder dieser Bereich existiert nicht. Die Bereichsliste enthält alles, was es gibt.", "backHome": "Zurück zum Anfang" }
+}

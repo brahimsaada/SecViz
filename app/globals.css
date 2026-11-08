@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * SecViz design tokens.
+ *
+ * Dark is the default. Light is opt-in via [data-theme="light"], set by the
+ * inline script in the root layout before the first paint.
+ *
+ * Four meanings are fixed here and never reused for decoration:
+ *   --inert      data at rest, nothing claimed about it
+ *   --attacker   the adversary's action or artifact
+ *   --defender   the control, log or alert that answers it
+ *   --anomalous  suspicious but not yet proven hostile
+ * Everything interactive uses --accent. Nothing else gets a colour.
+ */
+
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #0b1020;
+  --panel: #0f1628;
+  --raised: #141d33;
+
+  --ink-strong: #b7c6f3;
+  --ink: #afc4f2;
+  --ink-soft: #acb8d3;
+  --ink-muted: #859cc9;
+
+  --line: #3c649f;
+  --line-mid: #1d304e;
+  --line-soft: #1a283e;
+
+  --accent: #14d1e5;
+  --accent-dim: #0e95a3;
+
+  --inert: #8495b2;
+  --attacker: #fb7185;
+  --defender: #19e595;
+  --anomalous: #f8b900;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.5, 0, 0.75, 0);
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+
+  --bg: #fdfdfe;
+  --panel: #fefeff;
+  --raised: #f1f5fd;
+
+  --ink-strong: #00238a;
+  --ink: #0032a0;
+  --ink-soft: #5a73a8;
+  --ink-muted: #5d6f95;
+
+  --line: #6f94c9;
+  --line-mid: #c8d6ec;
+  --line-soft: #e3e9f3;
+
+  --accent: #0a7c88;
+  --accent-dim: #0e95a3;
+
+  --inert: #5d6f95;
+  --attacker: #be123c;
+  /* Darkened from the reference's values to clear 4.5:1 on the light panel:
+     these carry 10px severity labels, which need AA for normal text. */
+  --defender: #0b8152;
+  --anomalous: #986800;
+}
+
+:root {
+  /*
+   * One mono family carries the whole interface, the way the reference does:
+   * it is what makes the page read as an instrument rather than an article.
+   * Per-script fallbacks keep CJK, Arabic, Hebrew and Devanagari legible,
+   * since no mono family covers them all.
+   */
+  --font-mono: ui-monospace, 'JetBrains Mono', 'IBM Plex Mono', 'SFMono-Regular',
+    'Cascadia Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+}
+
+:root:lang(ja) { --font-mono: ui-monospace, 'Hiragino Sans', 'Yu Gothic UI', Meiryo, 'Noto Sans JP', monospace; }
+:root:lang(ko) { --font-mono: ui-monospace, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', monospace; }
+:root:lang(zh-CN) { --font-mono: ui-monospace, 'PingFang SC', 'Microsoft YaHei UI', 'Noto Sans SC', monospace; }
+:root:lang(zh-TW) { --font-mono: ui-monospace, 'PingFang TC', 'Microsoft JhengHei UI', 'Noto Sans TC', monospace; }
+:root:lang(ar) { --font-mono: ui-monospace, 'Geeza Pro', 'Noto Sans Arabic', Tahoma, monospace; }
+:root:lang(he) { --font-mono: ui-monospace, 'Arial Hebrew', 'Noto Sans Hebrew', Arial, monospace; }
+:root:lang(hi) { --font-mono: ui-monospace, 'Kohinoor Devanagari', 'Nirmala UI', 'Noto Sans Devanagari', monospace; }
+
+* { border-color: var(--line-soft); }
+
+html {
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+  font-variant-ligatures: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Long prose passages only. Everything else stays mono. */
+.prose-sans {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 1px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* A small-caps label. Used for every panel heading, as in the reference. */
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  font-weight: 600;
+}
+
+.hairline-grid {
+  background-image: linear-gradient(var(--line-soft) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: -1px -1px;
+}
+
+/*
+ * Reduced motion: the player switches to step-through mode in JS as well,
+ * so nothing moves continuously. These rules cover the CSS transitions.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Thin scrollbars, so panels do not grow a heavy chrome edge. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-mid) transparent;
+}
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb {
+  background: var(--line-mid);
+  border-radius: 4px;
+}

@@ -1,0 +1,45 @@
+{
+  "tagline": "Lihat keamanan bekerja, langkah demi langkah.",
+  "nav": { "domains": "Bidang", "lessons": "Pelajaran", "about": "Tentang", "theme": "Terang atau gelap", "language": "Bahasa", "skipToPlayer": "Lompat ke pemutar" },
+  "home": {
+    "lead": "Setiap topik adalah garis waktu yang bisa Anda putar, hentikan, geser, dan periksa. Tindakan penyerang di satu sisi, yang lewat di jaringan di tengah, dan log yang akan dilihat SOC di sisi lain.",
+    "startFlagship": "Mulai dari jabat tangan TLS", "browse": "Telusuri bidangnya",
+    "promiseTitle": "Tiga sudut pandang, satu garis waktu",
+    "actorTitle": "Sudut pandang pelaku", "actorBody": "Apa yang dilakukan penyerang atau pengguna, langkah demi langkah, beserta alasan setiap langkahnya.",
+    "wireTitle": "Sudut pandang jaringan", "wireBody": "Apa yang lewat di jaringan, diurai bidang demi bidang dan bita demi bita, dengan catatan sederhana pada setiap bidang.",
+    "defenderTitle": "Sudut pandang bertahan", "defenderBody": "Log, peringatan, dan telemetri yang dihasilkan langkah yang sama, dari sumber yang benar-benar dibaca SOC.",
+    "domainsTitle": "Dua belas bidang",
+    "domainsLead": "Topik utama hadir sekali saja dan dirujuk dari mana pun diperlukan. Setiap bidang terbuka sebagai peta, jadi Anda melihat jalur, bukan daftar.",
+    "safetyTitle": "Semuanya simulasi",
+    "safetyBody": "Semua skenario memakai data sintetis. Tidak ada pelajaran yang memuat kode eksploitasi yang berfungsi atau petunjuk serangan yang bisa dijalankan, dan setiap pelajaran serangan berakhir pada pasangan deteksinya.",
+    "readAbout": "Baca cara membangunnya"
+  },
+  "player": {
+    "play": "PUTAR", "pause": "JEDA", "replay": "ULANG", "reset": "ATUR ULANG",
+    "playPause": "Putar atau jeda (Spasi)", "nextStep": "Langkah berikutnya (panah kanan)", "prevStep": "Langkah sebelumnya (panah kiri)",
+    "speed": "Kecepatan", "scrubber": "Garis waktu. Gunakan tombol panah untuk melangkah.", "stepOf": "Langkah {n} dari {total}",
+    "stepDetails": "RINCIAN LANGKAH", "bytes": "BITA", "decode": "URAIAN",
+    "noArtifact": "Langkah ini tidak mengirim apa pun di jaringan. Tidak ada yang bisa diurai.",
+    "noTelemetry": "Langkah ini tidak meninggalkan jejak di log mana pun. Itulah intinya.",
+    "telemetry": "TELEMETRI", "legend": "KETERANGAN", "facts": "FAKTA",
+    "perspective": "Sudut pandang", "actor": "Pelaku", "defender": "Bertahan", "both": "Keduanya",
+    "whatIf": "BAGAIMANA JIKA", "whatIfBack": "Kembali ke jalur utama", "onBranch": "Anda berada di jalur «bagaimana jika».",
+    "stepThrough": "Mode melangkah: gerakan dimatikan, gunakan tombol langkah.",
+    "fieldHint": "Arahkan kursor atau pilih sebuah bidang untuk melihat artinya.",
+    "offsetFmt": "ofset {offset}, {length} bita", "suspicious": "ditandai",
+    "overview": "RINGKASAN", "startLesson": "MULAI", "finished": "SELESAI", "intro": "PEMBUKA", "outro": "PENUTUP"
+  },
+  "challenge": { "title": "LATIHAN", "check": "PERIKSA", "tryAgain": "COBA LAGI", "correct": "Benar.", "incorrect": "Bukan itu.", "reveal": "Tampilkan jawaban", "pickOne": "Pilih satu, lalu periksa." },
+  "lesson": {
+    "level": "Tingkat", "minutes": "{n} mnt", "prerequisites": "Prasyarat", "related": "Terkait", "alsoIn": "Juga di",
+    "attack": "ATT&CK", "detectionCounterpart": "Pasangan deteksi",
+    "foundations": "Dasar", "intermediate": "Menengah", "advanced": "Lanjutan",
+    "planned": "Direncanakan", "plannedNote": "Belum ditulis. Mesinnya siap, isinya belum.",
+    "lessonCount": "{n} pelajaran", "writtenCount": "{written} dari {total} ditulis", "openMap": "Buka peta",
+    "noneYet": "Belum ada pelajaran yang ditulis di bidang ini."
+  },
+  "severity": { "info": "info", "notice": "catatan", "warning": "peringatan", "alert": "siaga" },
+  "intent": { "inert": "Pasif", "attacker": "Penyerang", "defender": "Bertahan", "anomalous": "Anomali", "signal": "Sinyal" },
+  "footer": { "simulated": "Semua data di platform ini adalah simulasi.", "source": "Kode" },
+  "error": { "notFound": "Halaman tidak ada", "notFoundBody": "Pelajaran atau bidang itu tidak ada. Daftar bidang memuat semua yang ada.", "backHome": "Kembali ke awal" }
+}

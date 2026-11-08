@@ -1,0 +1,62 @@
+{
+  "tagline": "Observa la seguridad en funcionamiento, paso a paso.",
+  "nav": { "domains": "Dominios", "lessons": "Lecciones", "about": "Acerca de", "theme": "Claro u oscuro", "language": "Idioma", "skipToPlayer": "Ir al reproductor" },
+  "home": {
+    "lead": "Cada tema es una línea de tiempo que puedes reproducir, pausar, recorrer e inspeccionar. La acción del atacante a un lado, el cable en el medio y los registros que vería un SOC al otro.",
+    "startFlagship": "Empieza con el saludo TLS",
+    "browse": "Explorar los dominios",
+    "promiseTitle": "Tres vistas, una línea de tiempo",
+    "actorTitle": "Vista del actor",
+    "actorBody": "Lo que hace el atacante o el usuario, paso a paso, con el motivo de cada movimiento.",
+    "wireTitle": "Vista del cable",
+    "wireBody": "Lo que cruza la red, decodificado campo por campo y byte por byte, con una nota en lenguaje claro en cada campo.",
+    "defenderTitle": "Vista del defensor",
+    "defenderBody": "Los registros, alertas y la telemetría que produce el mismo paso, desde las fuentes que un SOC lee de verdad.",
+    "domainsTitle": "Doce dominios",
+    "domainsLead": "Un tema canónico vive una sola vez y se referencia donde haga falta. Cada dominio se abre como un mapa, así que ves un camino en lugar de una lista.",
+    "safetyTitle": "Todo simulado",
+    "safetyBody": "Cada escenario usa datos sintéticos. Ninguna lección incluye código de explotación funcional ni instrucciones de ataque operativas, y cada lección de ataque termina en su contraparte de detección.",
+    "readAbout": "Lee cómo está construido"
+  },
+  "player": {
+    "play": "INICIAR", "pause": "PAUSA", "replay": "REPETIR", "reset": "REINICIAR",
+    "playPause": "Iniciar o pausar (Espacio)", "nextStep": "Paso siguiente (flecha derecha)", "prevStep": "Paso anterior (flecha izquierda)",
+    "speed": "Velocidad", "scrubber": "Línea de tiempo. Usa las flechas para avanzar.", "stepOf": "Paso {n} de {total}",
+    "stepDetails": "DETALLE DEL PASO", "bytes": "BYTES", "decode": "DECODIFICACIÓN",
+    "noArtifact": "Este paso no mueve nada por el cable. No hay nada que decodificar.",
+    "noTelemetry": "Este paso no deja rastro en ningún registro. De eso se trata.",
+    "telemetry": "TELEMETRÍA", "legend": "LEYENDA", "facts": "DATOS",
+    "perspective": "Perspectiva", "actor": "Actor", "defender": "Defensor", "both": "Ambas",
+    "whatIf": "QUÉ PASARÍA SI", "whatIfBack": "Volver al camino principal", "onBranch": "Estás en un camino alternativo.",
+    "stepThrough": "Modo paso a paso: el movimiento está desactivado, usa los controles de paso.",
+    "fieldHint": "Pasa el cursor o enfoca un campo para ver qué significa.",
+    "offsetFmt": "desplazamiento {offset}, {length} bytes", "suspicious": "marcado",
+    "overview": "RESUMEN", "startLesson": "EMPEZAR", "finished": "COMPLETA", "intro": "INTRO", "outro": "CIERRE"
+  },
+  "challenge": { "title": "EJERCICIO", "check": "COMPROBAR", "tryAgain": "OTRA VEZ", "correct": "Correcto.", "incorrect": "No es esa.", "reveal": "Ver la respuesta", "pickOne": "Elige una y comprueba." },
+  "lesson": {
+    "level": "Nivel", "minutes": "{n} min", "prerequisites": "Requisitos previos", "related": "Relacionado", "alsoIn": "También en",
+    "attack": "ATT&CK", "detectionCounterpart": "Contraparte de detección",
+    "foundations": "Fundamentos", "intermediate": "Intermedio", "advanced": "Avanzado",
+    "planned": "Prevista", "plannedNote": "Aún sin escribir. El motor está listo; el contenido no.",
+    "lessonCount": "{n} lecciones", "writtenCount": "{written} de {total} escritas", "openMap": "Abrir el mapa",
+    "noneYet": "Todavía no hay ninguna lección escrita en este dominio."
+  },
+  "severity": { "info": "info", "notice": "aviso", "warning": "advertencia", "alert": "alerta" },
+  "intent": { "inert": "Inerte", "attacker": "Atacante", "defender": "Defensor", "anomalous": "Anómalo", "signal": "Señal" },
+  "about": {
+    "title": "Acerca de SecViz",
+    "intent": "Para qué sirve",
+    "intentBody": "SecViz enseña seguridad animando cómo ocurre. En lugar de describir un saludo o una ruta de ataque, los reproduce: puedes pausar en cualquier momento y desarmar el artefacto campo por campo, y después mirar ese mismo instante desde el lado del defensor.",
+    "safety": "Límites",
+    "safetyBody": "Todos los escenarios usan datos sintéticos. En esta plataforma no hay objetivos reales, ni credenciales reales, ni cargas de explotación funcionales. Las lecciones de ataque existen para entender la detección y la defensa: cada una nombra la lección de detección que la responde, y el ataque se muestra al nivel de cómo se ve en el cable y en los registros, no como un procedimiento a seguir.",
+    "how": "Cómo está construido",
+    "howBody": "Un solo componente, el reproductor de escenarios, impulsa todas las lecciones. Una lección son datos validados contra un esquema, así que quien aporte una no toca el código del motor. Los paneles permanecen sincronizados con una única línea de tiempo.",
+    "access": "Accesibilidad",
+    "accessBody": "El reproductor funciona por completo con el teclado: la barra espaciadora inicia y pausa, las flechas avanzan. El color nunca es la única señal, cada significado lleva también un marcador o una etiqueta, y ambos temas cumplen el contraste WCAG AA. Cuando el sistema pide menos movimiento, el reproductor pasa al modo paso a paso sin animación continua.",
+    "credit": "Crédito",
+    "creditBody": "El modelo de interacción está inspirado en Protocol Explorer de Dilum Sanjaya, que enseña redes animando paquetes y decodificando cada uno byte por byte. SecViz aplica esa pedagogía a toda la seguridad y añade la vista del defensor."
+  },
+  "footer": { "simulated": "Todos los datos de esta plataforma son simulados.", "source": "Código" },
+  "error": { "notFound": "No existe esa página", "notFoundBody": "Esa lección o dominio no existe. La lista de dominios tiene todo lo que sí existe.", "backHome": "Volver al inicio" }
+}

@@ -1,0 +1,45 @@
+{
+  "tagline": "Güvenliğin işleyişini adım adım izleyin.",
+  "nav": { "domains": "Alanlar", "lessons": "Dersler", "about": "Hakkında", "theme": "Açık veya koyu", "language": "Dil", "skipToPlayer": "Oynatıcıya geç" },
+  "home": {
+    "lead": "Her konu, oynatabileceğiniz, durdurabileceğiniz, gezinebileceğiniz ve inceleyebileceğiniz bir zaman çizelgesidir. Bir yanda saldırganın hareketi, ortada hattan geçenler, öbür yanda bir SOC'un göreceği kayıtlar.",
+    "startFlagship": "TLS el sıkışmasıyla başlayın", "browse": "Alanlara göz atın",
+    "promiseTitle": "Üç görünüm, tek zaman çizelgesi",
+    "actorTitle": "Aktör görünümü", "actorBody": "Saldırganın ya da kullanıcının ne yaptığı, her hamlenin gerekçesiyle, adım adım.",
+    "wireTitle": "Hat görünümü", "wireBody": "Ağdan geçenler, alan alan ve bayt bayt çözümlenir; her alanda sade bir açıklama bulunur.",
+    "defenderTitle": "Savunan görünümü", "defenderBody": "Aynı adımın ürettiği kayıtlar, uyarılar ve telemetri; bir SOC'un gerçekten okuduğu kaynaklardan.",
+    "domainsTitle": "On iki alan",
+    "domainsLead": "Asıl konu bir kez yer alır ve gereken her yerden ona atıf yapılır. Her alan harita olarak açılır, böylece liste değil bir yol görürsünüz.",
+    "safetyTitle": "Baştan sona benzetim",
+    "safetyBody": "Her senaryo yapay veri kullanır. Hiçbir ders çalışan sömürü kodu ya da sahada uygulanabilir saldırı talimatı içermez; her saldırı dersi kendi tespit karşılığıyla sona erer.",
+    "readAbout": "Nasıl kurulduğunu okuyun"
+  },
+  "player": {
+    "play": "OYNAT", "pause": "DURDUR", "replay": "TEKRAR", "reset": "SIFIRLA",
+    "playPause": "Oynat veya durdur (Boşluk)", "nextStep": "Sonraki adım (sağ ok)", "prevStep": "Önceki adım (sol ok)",
+    "speed": "Oynatma hızı", "scrubber": "Zaman çizelgesi. Adımlamak için ok tuşlarını kullanın.", "stepOf": "Adım {n} / {total}",
+    "stepDetails": "ADIM AYRINTISI", "bytes": "BAYTLAR", "decode": "ÇÖZÜMLEME",
+    "noArtifact": "Bu adımda hattan hiçbir şey geçmiyor. Çözümlenecek bir şey yok.",
+    "noTelemetry": "Bu adım hiçbir kayıtta iz bırakmaz. Zaten amacı bu.",
+    "telemetry": "TELEMETRİ", "legend": "GÖSTERGE", "facts": "VERİLER",
+    "perspective": "Bakış", "actor": "Aktör", "defender": "Savunan", "both": "İkisi",
+    "whatIf": "YA OLSAYDI", "whatIfBack": "Ana yola dön", "onBranch": "Bir «ya olsaydı» yolundasınız.",
+    "stepThrough": "Adımlama kipi: hareket kapalı, adım düğmelerini kullanın.",
+    "fieldHint": "Anlamını görmek için bir alanın üzerine gelin ya da seçin.",
+    "offsetFmt": "konum {offset}, {length} bayt", "suspicious": "işaretli",
+    "overview": "GENEL BAKIŞ", "startLesson": "BAŞLA", "finished": "TAMAM", "intro": "GİRİŞ", "outro": "KAPANIŞ"
+  },
+  "challenge": { "title": "ALIŞTIRMA", "check": "DENETLE", "tryAgain": "YENİDEN", "correct": "Doğru.", "incorrect": "O değil.", "reveal": "Yanıtı göster", "pickOne": "Birini seçip denetleyin." },
+  "lesson": {
+    "level": "Düzey", "minutes": "{n} dk", "prerequisites": "Ön koşullar", "related": "İlgili", "alsoIn": "Ayrıca",
+    "attack": "ATT&CK", "detectionCounterpart": "Tespit karşılığı",
+    "foundations": "Temeller", "intermediate": "Orta", "advanced": "İleri",
+    "planned": "Planlı", "plannedNote": "Henüz yazılmadı. Motor hazır, içerik değil.",
+    "lessonCount": "{n} ders", "writtenCount": "{total} dersin {written} tanesi yazıldı", "openMap": "Haritayı aç",
+    "noneYet": "Bu alanda henüz yazılmış ders yok."
+  },
+  "severity": { "info": "bilgi", "notice": "bildirim", "warning": "uyarı", "alert": "alarm" },
+  "intent": { "inert": "Etkisiz", "attacker": "Saldırgan", "defender": "Savunan", "anomalous": "Aykırı", "signal": "Sinyal" },
+  "footer": { "simulated": "Bu platformdaki tüm veriler benzetimdir.", "source": "Kaynak" },
+  "error": { "notFound": "Böyle bir sayfa yok", "notFoundBody": "Böyle bir ders ya da alan yok. Var olan her şey alan listesinde.", "backHome": "Başa dön" }
+}

@@ -1,0 +1,62 @@
+{
+  "tagline": "Regardez la sécurité à l'œuvre, étape par étape.",
+  "nav": { "domains": "Domaines", "lessons": "Leçons", "about": "À propos", "theme": "Clair ou sombre", "language": "Langue", "skipToPlayer": "Aller au lecteur" },
+  "home": {
+    "lead": "Chaque sujet est une chronologie que vous pouvez lire, mettre en pause, parcourir et inspecter. L'action de l'attaquant d'un côté, le câble au milieu, les journaux que verrait un SOC de l'autre.",
+    "startFlagship": "Commencer par la poignée de main TLS",
+    "browse": "Parcourir les domaines",
+    "promiseTitle": "Trois vues, une chronologie",
+    "actorTitle": "Vue de l'acteur",
+    "actorBody": "Ce que fait l'attaquant ou l'utilisateur, étape par étape, avec la raison de chaque geste.",
+    "wireTitle": "Vue du câble",
+    "wireBody": "Ce qui traverse le réseau, décodé champ par champ et octet par octet, avec une note en langage clair sur chaque champ.",
+    "defenderTitle": "Vue du défenseur",
+    "defenderBody": "Les journaux, alertes et télémétries que produit la même étape, depuis les sources qu'un SOC lit réellement.",
+    "domainsTitle": "Douze domaines",
+    "domainsLead": "Un sujet canonique n'existe qu'une fois et se référence partout où il est utile. Chaque domaine s'ouvre en carte, vous voyez donc un chemin et non une liste.",
+    "safetyTitle": "Entièrement simulé",
+    "safetyBody": "Chaque scénario utilise des données synthétiques. Aucune leçon ne contient de code d'exploitation fonctionnel ni d'instructions d'attaque opérationnelles, et chaque leçon d'attaque se termine par sa contrepartie de détection.",
+    "readAbout": "Lire comment c'est construit"
+  },
+  "player": {
+    "play": "LIRE", "pause": "PAUSE", "replay": "REVOIR", "reset": "RÉINITIALISER",
+    "playPause": "Lire ou mettre en pause (Espace)", "nextStep": "Étape suivante (flèche droite)", "prevStep": "Étape précédente (flèche gauche)",
+    "speed": "Vitesse de lecture", "scrubber": "Chronologie. Utilisez les flèches pour avancer.", "stepOf": "Étape {n} sur {total}",
+    "stepDetails": "DÉTAIL DE L'ÉTAPE", "bytes": "OCTETS", "decode": "DÉCODAGE",
+    "noArtifact": "Cette étape ne fait rien circuler sur le câble. Rien à décoder.",
+    "noTelemetry": "Cette étape ne laisse aucune trace dans les journaux. C'est tout l'intérêt.",
+    "telemetry": "TÉLÉMÉTRIE", "legend": "LÉGENDE", "facts": "FAITS",
+    "perspective": "Perspective", "actor": "Acteur", "defender": "Défenseur", "both": "Les deux",
+    "whatIf": "ET SI", "whatIfBack": "Revenir au chemin principal", "onBranch": "Vous êtes sur un chemin alternatif.",
+    "stepThrough": "Mode pas à pas : le mouvement est coupé, utilisez les commandes d'étape.",
+    "fieldHint": "Survolez ou sélectionnez un champ pour voir ce qu'il signifie.",
+    "offsetFmt": "décalage {offset}, {length} octets", "suspicious": "signalé",
+    "overview": "APERÇU", "startLesson": "DÉMARRER", "finished": "TERMINÉ", "intro": "INTRO", "outro": "CONCLUSION"
+  },
+  "challenge": { "title": "EXERCICE", "check": "VÉRIFIER", "tryAgain": "RÉESSAYER", "correct": "Correct.", "incorrect": "Pas celle-là.", "reveal": "Voir la réponse", "pickOne": "Choisissez-en une, puis vérifiez." },
+  "lesson": {
+    "level": "Niveau", "minutes": "{n} min", "prerequisites": "Prérequis", "related": "Associé", "alsoIn": "Aussi dans",
+    "attack": "ATT&CK", "detectionCounterpart": "Contrepartie de détection",
+    "foundations": "Fondations", "intermediate": "Intermédiaire", "advanced": "Avancé",
+    "planned": "Prévue", "plannedNote": "Pas encore écrite. Le moteur est prêt, le contenu non.",
+    "lessonCount": "{n} leçons", "writtenCount": "{written} sur {total} écrites", "openMap": "Ouvrir la carte",
+    "noneYet": "Aucune leçon de ce domaine n'est encore écrite."
+  },
+  "severity": { "info": "info", "notice": "avis", "warning": "avertissement", "alert": "alerte" },
+  "intent": { "inert": "Inerte", "attacker": "Attaquant", "defender": "Défenseur", "anomalous": "Anormal", "signal": "Signal" },
+  "about": {
+    "title": "À propos de SecViz",
+    "intent": "À quoi cela sert",
+    "intentBody": "SecViz enseigne la sécurité en animant son déroulement. Plutôt que de décrire une poignée de main ou un chemin d'attaque, il les joue : vous pouvez faire une pause à tout instant et démonter l'artefact champ par champ, puis regarder ce même instant du côté du défenseur.",
+    "safety": "Garde-fous",
+    "safetyBody": "Tous les scénarios utilisent des données synthétiques. Il n'y a sur cette plateforme aucune cible réelle, aucun identifiant réel et aucune charge d'exploitation fonctionnelle. Les leçons d'attaque existent pour construire une compréhension de la détection et de la défense : chacune nomme la leçon de détection qui lui répond, et l'attaque est montrée au niveau de ce qu'elle donne à voir sur le câble et dans les journaux, non comme une procédure à suivre.",
+    "how": "Comment c'est construit",
+    "howBody": "Un seul composant, le lecteur de scénarios, fait tourner toutes les leçons. Une leçon est une donnée validée par un schéma : un contributeur en ajoute une sans toucher au code du moteur. Les panneaux restent synchronisés sur une chronologie unique.",
+    "access": "Accessibilité",
+    "accessBody": "Le lecteur se pilote entièrement au clavier : la barre d'espace lit et met en pause, les flèches avancent. La couleur n'est jamais le seul signal, chaque sens porte aussi un marqueur ou une étiquette, et les deux thèmes respectent le contraste WCAG AA. Lorsque le système demande moins d'animation, le lecteur passe en mode pas à pas.",
+    "credit": "Crédit",
+    "creditBody": "Le modèle d'interaction s'inspire de Protocol Explorer de Dilum Sanjaya, qui enseigne les réseaux en animant les paquets et en décodant chacun octet par octet. SecViz applique cette pédagogie à toute la sécurité et y ajoute la vue du défenseur."
+  },
+  "footer": { "simulated": "Toutes les données de cette plateforme sont simulées.", "source": "Source" },
+  "error": { "notFound": "Page introuvable", "notFoundBody": "Cette leçon ou ce domaine n'existe pas. La liste des domaines contient tout ce qui existe.", "backHome": "Retour au début" }
+}

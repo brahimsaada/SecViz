@@ -1,0 +1,58 @@
+{
+  "tagline": "一步一步看安全如何运作。",
+  "nav": { "domains": "领域", "lessons": "课程", "about": "关于", "theme": "浅色或深色", "language": "语言", "skipToPlayer": "跳到播放器" },
+  "home": {
+    "lead": "每个主题都是一条可以播放、暂停、拖动和检视的时间线。一侧是攻击者的动作，中间是线路上传输的内容，另一侧是 SOC 会看到的日志。",
+    "startFlagship": "从 TLS 握手开始", "browse": "浏览各领域",
+    "promiseTitle": "三个视角，一条时间线",
+    "actorTitle": "行动者视角", "actorBody": "攻击者或用户做了什么，一步一步，并说明每一步的理由。",
+    "wireTitle": "线路视角", "wireBody": "网络上传输的内容，逐字段、逐字节解码，每个字段都有一句平实的说明。",
+    "defenderTitle": "防守方视角", "defenderBody": "同一步产生的日志、告警与遥测，取自 SOC 实际会读的数据源。",
+    "domainsTitle": "十二个领域",
+    "domainsLead": "一个主题只收录一次，需要的地方引用它。每个领域以地图方式打开，于是你看到的是一条路径，而不是一张清单。",
+    "safetyTitle": "全部为模拟数据",
+    "safetyBody": "所有场景都使用合成数据。没有任何课程提供可用的利用代码或可照做的攻击步骤，每一节攻击课程都以对应的检测课程收尾。",
+    "readAbout": "了解它是怎么做的"
+  },
+  "player": {
+    "play": "播放", "pause": "暂停", "replay": "重播", "reset": "重置",
+    "playPause": "播放或暂停（空格）", "nextStep": "下一步（右方向键）", "prevStep": "上一步（左方向键）",
+    "speed": "播放速度", "scrubber": "时间线。用方向键逐步移动。", "stepOf": "第 {n} 步，共 {total} 步",
+    "stepDetails": "步骤详情", "bytes": "字节", "decode": "解码",
+    "noArtifact": "这一步没有任何内容经过线路，没有可解码的东西。",
+    "noTelemetry": "这一步不会在任何日志里留下痕迹。这正是它的要点。",
+    "telemetry": "遥测", "legend": "图例", "facts": "要点",
+    "perspective": "视角", "actor": "行动者", "defender": "防守方", "both": "两者",
+    "whatIf": "如果", "whatIfBack": "回到主路径", "onBranch": "你正处在一条「如果」分支上。",
+    "stepThrough": "逐步模式：动画已关闭，请使用步骤按钮。",
+    "fieldHint": "把指针移到字段上或选中它，即可看到含义。",
+    "offsetFmt": "偏移 {offset}，{length} 字节", "suspicious": "已标记",
+    "overview": "概览", "startLesson": "开始", "finished": "已完成", "intro": "引言", "outro": "小结"
+  },
+  "challenge": { "title": "练习", "check": "检查", "tryAgain": "再试一次", "correct": "正确。", "incorrect": "不是这个。", "reveal": "显示答案", "pickOne": "先选一项，然后检查。" },
+  "lesson": {
+    "level": "层级", "minutes": "{n} 分钟", "prerequisites": "前置课程", "related": "相关", "alsoIn": "也见于",
+    "attack": "ATT&CK", "detectionCounterpart": "对应的检测课程",
+    "foundations": "基础", "intermediate": "中级", "advanced": "进阶",
+    "planned": "计划中", "plannedNote": "尚未撰写。引擎已就绪，内容还没有。",
+    "lessonCount": "{n} 节课", "writtenCount": "已写 {written}，共 {total}", "openMap": "打开地图",
+    "noneYet": "这个领域还没有写好的课程。"
+  },
+  "severity": { "info": "信息", "notice": "提示", "warning": "警告", "alert": "告警" },
+  "intent": { "inert": "惰性", "attacker": "攻击者", "defender": "防守方", "anomalous": "异常", "signal": "信号" },
+  "about": {
+    "title": "关于 SecViz",
+    "intent": "它的用途",
+    "intentBody": "SecViz 通过把过程演示出来讲授安全。它不描述一次握手或一条攻击路径，而是把它播放出来：你可以在任意时刻暂停，逐字段拆开其中的内容，再从防守方的角度看同一个时刻。",
+    "safety": "边界",
+    "safetyBody": "所有场景都使用合成数据。整个平台没有真实目标、没有真实凭据，也没有任何可用的利用载荷。攻击课程的存在是为了建立对检测与防御的理解：每一节都指明回应它的检测课程，攻击只展示到它在线路上和日志里是什么样子，而不是一套照做的步骤。",
+    "how": "它是怎么做的",
+    "howBody": "一个组件——场景播放器——驱动全部课程。课程是经过 schema 校验的数据，贡献者添加课程时不必改动引擎代码。各个面板始终同步于同一条时间线。",
+    "access": "无障碍",
+    "accessBody": "播放器完全可用键盘操作：空格播放与暂停，方向键逐步移动。颜色从不是唯一的提示，每种含义都另有符号或文字，两套主题都满足 WCAG AA 对比度。当系统要求减少动态效果时，播放器会切换到没有连续动画的逐步模式。",
+    "credit": "致谢",
+    "creditBody": "这里的交互模式参照 Dilum Sanjaya 的 Protocol Explorer，该站通过让数据包动起来、逐字节解码来讲授网络。SecViz 把这套教法推广到整个安全领域，并加上了防守方视角。"
+  },
+  "footer": { "simulated": "本平台的全部数据均为模拟。", "source": "源码" },
+  "error": { "notFound": "没有这个页面", "notFoundBody": "该课程或领域不存在。领域列表里是所有确实存在的内容。", "backHome": "回到起点" }
+}
