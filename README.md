@@ -23,7 +23,50 @@ npm run dev
 npm run build && npm start
 ```
 
-Static output, no backend. It deploys to Vercel as-is.
+Static output, no backend.
+
+## Publishing it
+
+### GitHub Pages
+
+There is a workflow at `.github/workflows/pages.yml`. In the repository,
+open **Settings → Pages** and set **Source** to **GitHub Actions**. After
+that, a push to `main` publishes to
+`https://<owner>.github.io/<repo>/`, and the **Actions** tab has a
+**Run workflow** button for publishing any other branch by hand.
+
+The workflow validates the content and typechecks before it builds, so a
+malformed lesson fails the run instead of publishing a broken player.
+
+To build the Pages output locally:
+
+```bash
+PAGES=1 npm run build
+```
+
+That writes `out/`. Three things make it work on Pages, and all three are
+set by `PAGES=1`:
+
+- `output: 'export'` — plain HTML, no server.
+- `basePath` / `assetPrefix` — Pages serves a project site from
+  `/<repo>`, which has to be baked in at build time. The workflow takes it
+  from `actions/configure-pages`, so a rename needs no edit. For a user
+  site or a custom domain, which serve from the root, set
+  `PAGES_BASE_PATH` to an empty string.
+- `trailingSlash: true` — every route becomes a directory with an
+  `index.html`, which Pages resolves without a server.
+
+`public/.nojekyll` is also required: without it Pages hides every path
+beginning with an underscore, which is the whole of `_next`.
+
+### Vercel
+
+```bash
+npx vercel
+```
+
+No configuration and no environment variables. Leave `PAGES` unset — the
+default build is an ordinary Next build.
 
 ## How it is put together
 

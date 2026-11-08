@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>No such page · SecViz</title>
+    <meta name="robots" content="noindex" />
+    <style>
+      :root { color-scheme: dark; --bg:#0b1020; --ink:#afc4f2; --muted:#859cc9; --accent:#14d1e5; --line:#1d304e; }
+      @media (prefers-color-scheme: light) {
+        :root { color-scheme: light; --bg:#fdfdfe; --ink:#0032a0; --muted:#5d6f95; --accent:#0a7c88; --line:#c8d6ec; }
+      }
+      body {
+        margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+        background:var(--bg); color:var(--ink);
+        font:14px/1.6 ui-monospace,"JetBrains Mono","IBM Plex Mono",Menlo,Consolas,monospace;
+      }
+      main { max-width:34rem; padding:2rem 1rem; }
+      h1 { font-size:20px; margin:0 0 .5rem; }
+      p { color:var(--muted); margin:0 0 1.5rem; }
+      a {
+        display:inline-block; border:1px solid var(--line); padding:.4rem .8rem;
+        color:var(--ink); text-decoration:none; font-size:11px;
+        letter-spacing:.1em; text-transform:uppercase;
+      }
+      a:hover, a:focus-visible { border-color:var(--accent); color:var(--accent); }
+    </style>
+  </head>
+  <body>
+    <!--
+      GitHub Pages serves this for any path it cannot resolve. It is plain
+      HTML rather than a Next route, because Pages needs the file at the
+      site root and the app's own not-found lives under a locale.
+    -->
+    <main>
+      <h1>No such page</h1>
+      <p>That lesson or domain does not exist. The domain list has everything that does.</p>
+      <a id="home" href="/en/">Back to the start</a>
+    </main>
+    <script>
+      // Pages serves this file for any unresolved path under the site, so
+      // the link is rebuilt from wherever we actually are. On a project
+      // site the first segment is the repository; on a user site or a
+      // custom domain there is no prefix.
+      (function () {
+        var seg = location.pathname.split('/').filter(Boolean)[0]
+        var known = ['en','es','pt-BR','fr','de','tr','uk','id','ja','zh-CN','zh-TW','ko','hi','ar','he']
+        var base = seg && known.indexOf(seg) === -1 ? '/' + seg : ''
+        document.getElementById('home').href = base + '/en/'
+      })()
+    </script>
+  </body>
+</html>
