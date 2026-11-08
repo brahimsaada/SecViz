@@ -30,10 +30,14 @@ Static output, no backend.
 ### GitHub Pages
 
 There is a workflow at `.github/workflows/pages.yml`. In the repository,
-open **Settings → Pages** and set **Source** to **GitHub Actions**. After
-that, a push to `main` publishes to
-`https://<owner>.github.io/<repo>/`, and the **Actions** tab has a
-**Run workflow** button for publishing any other branch by hand.
+open **Settings → Pages** and set **Source** to **GitHub Actions**. A push
+then publishes to `https://<owner>.github.io/<repo>/`.
+
+Every branch is built, so a broken lesson or a type error surfaces on the
+branch; only the repository's **default** branch is published. That is
+read from `github.event.repository.default_branch`, so renaming the
+default branch or merging into `main` needs no edit here. The **Actions**
+tab also has a **Run workflow** button.
 
 The workflow validates the content and typechecks before it builds, so a
 malformed lesson fails the run instead of publishing a broken player.

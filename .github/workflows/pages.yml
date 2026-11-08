@@ -1,10 +1,11 @@
 name: Deploy to GitHub Pages
 
 on:
+  # Every branch is built, so a broken lesson or a type error shows up on
+  # the branch rather than at deploy time. Only the default branch is
+  # actually published --- see the `if` on the deploy job.
   push:
-    branches: [main]
-  # Lets you deploy any branch by hand from the Actions tab, which is how
-  # you would publish before this work is merged.
+  # Also runnable by hand from the Actions tab.
   workflow_dispatch:
 
 permissions:
@@ -57,6 +58,9 @@ jobs:
 
   deploy:
     needs: build
+    # Publishes whichever branch the repository calls default, so this
+    # keeps working after a rename or a merge into main without an edit.
+    if: github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
     environment:
       name: github-pages
